@@ -1,0 +1,16 @@
+server:
+    port: 8080
+    servlet:
+        context-path: /
+
+spring:
+    jpa:
+        database: POSTGRESQL
+        hibernate.ddl-auto: update # (create, create-drop, update, none)
+        show-sql: true
+
+    datasource:
+        driverClassName: org.postgresql.Driver
+        url: jdbc:postgresql://localhost:5432/mydatabase
+        username: myuser
+        password: secret
