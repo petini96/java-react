@@ -26,13 +26,5 @@ public class UserAuthServiceImpl implements UserAuthService {
         log.info("Buscando no banco pelo nome");
         return this.UserAuthRepository.findByName(name);
     }
-
-    private Boolean simpleRule()  {
-        try {
-            this.simpleRule();
-        } catch (Exception e) {
-            return false;
-        }
-        return false;
-    }
+ 
 }

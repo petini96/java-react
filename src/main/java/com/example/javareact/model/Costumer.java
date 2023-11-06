@@ -1,9 +1,11 @@
 package com.example.javareact.model;
 
-
 import lombok.Data;
 
 import javax.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.io.Serializable;
 
 @Entity
@@ -16,4 +18,5 @@ public class Costumer implements Serializable {
     private String name;
 
     private String mail;
+    
 }
